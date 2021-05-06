@@ -53,8 +53,40 @@
 </form>
 <script type="text/javascript">
 //<![CDATA[
+document.f1.onsubmit=function(e){ 
+   var pw1=document.f1.user_pw1;
+   var pw2=document.f1.user_pw2;
+   
+   pw2.value=pw1.value;
+   pw2.disabled=true;
+   return false;
+}
 
-
+//전체선택 체크박스를 클릭했을 때
+document.f2.allChk.onclick=function(){ 
+   if(this.checked){ //체크되어 있으면 true 반환
+      document.f2.subject1.checked=true; //첫 번째 체크박스 체크됨
+      document.f2.subject2.checked=true; //두 번째 체크박스 체크됨
+      document.f2.subject3.checked=true; //세 번째 체크박스 체크됨
+   }else{ 
+      document.f2.subject1.checked=false; //첫 번째 체크박스 체크 해제됨
+      document.f2.subject2.checked=false; //두 번째 체크박스 체크 해제됨
+      document.f2.subject3.checked=false; //세 번째 체크박스 체크 해제됨
+   }
+}
+// 두 번째 폼요소에 전송버튼 눌렀을 때 실행
+document.f2.onsubmit=function(){
+   var act=document.f2.accept;
+   if(act.checked==false){ //체크되어 있지 않으면 false
+      alert("약관 동의해야 합니다!");
+      act.focus();
+      return false;
+   }
+}
+//]]>
+</script>
+</body>
+</html>
 
 
 
