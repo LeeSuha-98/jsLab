@@ -7,7 +7,14 @@
 //<![CDATA[
 var num=1;
 var t="<table border='1'>"; // 테이블 시작 태그
-
+for(var i=1; i<=4; i++){
+	t +="<tr>;
+	for(var k=1; k<=3; k++){
+		t += "<td>"+num+"</td>";
+		num++;
+	}
+	t += "</tr>";
+	}
 
 t+="</table>"; // 테이블 종료 태그
 //console.log(t);

@@ -5,20 +5,20 @@
 <title> 날짜 정보 객체 </title>
 <script type="text/javascript">
 //<![CDATA[
-
+	var t = new Date(); //오늘 날짜 객체를 생성한다.
+	//var nowYear = t.getFullYear(); //연도 정보를 가져온다. 2021
+  	//현재 연도에 8월 23일 날짜 객체를 생성한다.
+  	var theDate = new Date("2021/08/23");
+	
+	
+	var diffDate = theDate - t; //남은 기간(밀리초)
+	
+	//밀리초를 일로 계산
+	var result = Math.ceil(diffDate / (60 * 60 * 24 * 1000));
   
-
-  
-  
-  
-  
-  
-  
-  
-  
-  //남은 일수를 출력합니다.
-document.write("현재일로 부터 올해 말일까진 "+result+"일 남았습니다.");
-//]]>
+	//남은 일수를 출력합니다.
+	document.write("현재일로 부터 수료일(2021/08/23)까지 " + result + "일 남았습니다.");
+	//]]>
 </script>
 </head>
 <body>

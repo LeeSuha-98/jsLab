@@ -2,26 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
 <head>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<title> 배열객체 </title>
+<title>배열객체</title>
 <script type="text/javascript">
-//<![CDATA[
- var num=["사당","교대","방배","강남"];
- //배열 객체를 출력하였습니다.
-  document.write(num,"<br />");
+	//<![CDATA[
+	var num = [ "사당", "교대", "방배", "강남" ];
+	//배열 객체를 출력하였습니다.
+	document.write(num, "<br />");
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-//]]>
+	document.write(typeof num, "<br />");
+	
+	document.write(num, join("-"),"<br/>");
+	document.write(typeof num.join("-"),"<br/>");
+	
+	document.write(num.reverse(), "<br/>");
+	
+	document.write(num.sort(), "<br/>");
+
+	//]]>
 </script>
 </head>
 

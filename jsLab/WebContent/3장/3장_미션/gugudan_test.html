@@ -11,9 +11,26 @@
 		<tr>
 
 			<script language="javascript">
-				
+				//작성위치
+				for (var dan = 2; dan <= 9; dan++) {
+					document.write("<th>" + dan + "단");
+				}
 			</script>
 
+		</tr>
+		<tr>
+		<script language="javascript">
+				
+				for (var i= 2; i <= 9; i++) {
+					document.write("<td>");
+					for (var j=1; j<=9; j++){
+						result = i*j;
+						document.write(i+"*"+j+" = "+result+"<br>");
+						
+					} 
+					
+				}
+			</script>
 		</tr>
 	</table>
 </body>
