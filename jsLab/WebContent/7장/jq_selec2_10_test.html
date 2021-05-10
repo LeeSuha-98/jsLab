@@ -12,7 +12,11 @@
 <script type="text/javascript">
 	//<![CDATA[
 	$(function() {
-	
+		  $("#menu li:contains('내용3')").css("border","1px dashed red");
+	      $("#menu li:has('strong')").css("border","2px solid blue");
+	      $("#menu li").not(":first").css("background-color","yellow");
+	      $("#menu li:eq(1)").find("strong").css("font-size","22px");
+	      $("#menu").closest("div").css("border","5px double green");
 	});
 	//]]>
 </script>

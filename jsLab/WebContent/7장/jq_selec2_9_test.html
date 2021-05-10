@@ -7,8 +7,9 @@
 <script type="text/javascript">
 //<![CDATA[
 $(function(){
-
-
+	  $(":text").css("border","1px dashed #f00");
+		$(":checked").attr("checked",false);
+		$(":selected").attr("selected",false);
 
 });
 //]]>
@@ -26,6 +27,7 @@ $(function(){
   </p>
   <p>
    <select name="rel_site" id="resl_site">
+   <option value="선택">선택</option>
       <option value="네이버">네이버</option>
       <option value="네이트" selected="selected">네이트</option>
    </select>
