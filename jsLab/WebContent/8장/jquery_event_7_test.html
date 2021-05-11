@@ -8,11 +8,15 @@
 //<![CDATA[
 $(function(){
 
+	$("#user_name").focus(); //focus를 강제 발생
 
+	   $("#user_id").focus(function(){ //focus가 이동되었을 때
+	      $(this).val("");
+	   });
+	   $("#user_id").blur(function(){ //focus가 사라졌을 때
+	      $(this).val("아이디 입력");
 
-
-
-
+	   });
 
 
 });
