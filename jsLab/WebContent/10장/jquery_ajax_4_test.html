@@ -7,20 +7,16 @@
 <script type="text/javascript">
 	//<![CDATA[
 	$(function() {
-	$.ajax({
-		url: "rank.xml",
-		dataType: "xml",
-		success: function(result){
-			if($(result).find("rank").length>0){
-				$(result).find("rank").each(function(){
-					var name = $(this).find("k").text();
-					var result = "<li>"+name+"</li>"
-					
-					$("#wrap ol").append(result);
-				 })
-		      }
-		   });
+		$.ajax({
+			url : "rank.json", //데이터를 요청할 URL 주소
+			dataType : "json", //데이터 타입 설정
+			success : function(result) { //데이터 성공적으로 요청되었을 때...
+				$.each(result.rank, function(i, d) {
+					$("#wrap ol").append("<li>" + d["k"] + "</li>");
+				})
+			}
 		});
+	});
 	//]]>
 </script>
 </head>
