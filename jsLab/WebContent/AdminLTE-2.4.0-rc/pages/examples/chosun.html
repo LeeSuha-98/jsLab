@@ -2,7 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-latest.js"></script>
   <title>chosun.com</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -112,7 +115,7 @@ h1 {
 #news_wrap {
 	width: 380px;
 	margin: 0 auto;
-	background: #FFF url("images/rss_bg.gif") 0 0 repeat-x;
+	background: #FFF url("images/rss_bg.gif") 0px 25px repeat-x;
 }
 
 #news_wrap li {
@@ -481,8 +484,8 @@ h1 {
             <li><a href="register.html"><i class="fa fa-circle-o"></i> Register</a></li>
             <li><a href="lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
             <li><a href="404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="500.html"><i class="fa fa-circle-o"></i> chosun</a></li>
-            <li class="active"><a href="blank.html"><i class="fa fa-circle-o"></i> gallery</a></li>
+            <li><a href="500.html"><i class="fa fa-circle-o"></i> gallery</a></li>
+            <li class="active"><a href="blank.html"><i class="fa fa-circle-o"></i> chosun</a></li>
             <li><a href="pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
@@ -545,7 +548,7 @@ h1 {
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Examples</a></li>
-        <li class="active">gallery</li>
+        <li class="active">chosun</li>
       </ol>
     </section>
 
@@ -566,7 +569,7 @@ h1 {
           </div>
         </div>
         <div class="box-body">
-         <div id="gallery"></div>
+         <div id="chosun"></div>
 		
 	<div id="news_wrap">
 		<h2>
@@ -575,10 +578,17 @@ h1 {
 				오늘의 주요뉴스</a>
 		</h2>
 		<h2>
-			<a href="http://www.chosun.com/site/data/rss/ent.xml">엔터테이먼트</a>
+			<a href="http://www.chosun.com/site/data/rss/ent.xml">엔터테인먼트</a>
 		</h2>
 		<h2>
 			<a href="http://newsplus.chosun.com/hitdata/xml/se/sports/index.xml">스포츠</a>
+		</h2>
+		<h2>
+			<a href="https://it.donga.com/feeds/rss/news/">동아 뉴스</a>
+		</h2>
+		<h2>
+			<a href="http://data.ex.co.kr/openapi/restinfo/restWeatherList?key=test&type=xml&sdate=20210511&stdHour=10
+			">공공데이터</a>
 		</h2>
 		<ul id="news_list">
 		</ul>
