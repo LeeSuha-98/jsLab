@@ -27,7 +27,13 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-  
+  <link rel="stylesheet" type="text/css"
+	href="css/DataTables/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css"
+	href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+
+
+
 <style type="text/css">
 /*기본 세팅*/
 * {
@@ -118,7 +124,10 @@ h1 {
 }
 </style>
 
-
+<link rel="stylesheet" type="text/css"
+	href="css/DataTables/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css"
+	href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
@@ -520,24 +529,7 @@ h1 {
           </div>
         </div>
         <div class="box-body">
-
-
-	<ul id="news_list">
-		</ul>
-	</div>
-		<p class="btn_wrap">
-			<a href="#" id="before_btn">&lt;</a> <a href="#" id="next_btn">&gt;</a>
-		</p>
-	</div>
-        </div>
-        <!-- /.box-body -->
-        <div class="box-footer">
-          Footer
-        </div>
-        <!-- /.box-footer-->
-      </div>
-      <!-- /.box -->
-
+<body class="wide comments example">
 
 	<div class="content">
 		<table id="example" class="display" cellspacing="0" width="100%">
@@ -1015,7 +1007,26 @@ h1 {
 		</table>
 
 	</div>
-  
+
+</body>
+
+
+	<ul id="news_list">
+		</ul>
+	</div>
+		<p class="btn_wrap">
+			<a href="#" id="before_btn">&lt;</a> <a href="#" id="next_btn">&gt;</a>
+		</p>
+	</div>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          Footer
+        </div>
+        <!-- /.box-footer-->
+      </div>
+      <!-- /.box -->
+
     </section>
     <!-- /.content -->
     
@@ -1246,36 +1257,60 @@ h1 {
     $('.sidebar-menu').tree()
   })
 </script>
+<link rel="stylesheet" type="text/css"
+	href="css/DataTables/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css"
+	href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+
+
+<script type="text/javascript" language="javascript"
+	src="//code.jquery.com/jquery-1.12.4.js"></script>
+
+<!-- <script type="text/javascript" language="javascript"
+	src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script> -->
+
+<script type="text/javascript" language="javascript"
+	src="js/DataTables/jquery.dataTables.min.js"></script>
+
+
+<script type="text/javascript" language="javascript"
+	src="//code.jquery.com/jquery-1.12.4.js"></script>
+
+<!-- <script type="text/javascript" language="javascript"
+	src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script> -->
+
+<script type="text/javascript" language="javascript"
+	src="js/DataTables/jquery.dataTables.min.js"></script>
 <script type="text/javascript" class="init">
-   $(document).ready(function() {
+	$(document).ready(function() {
 
-      $('#example').DataTable({
-         "language" : {
-            "sEmptyTable" : "데이터가 없습니다",
-            "sInfo" : "_START_ - _END_ / _TOTAL_",
-            "sInfoEmpty" : "0 - 0 / 0",
-            "sInfoFiltered" : "(총 _MAX_ 개)",
-            "sInfoPostFix" : "",
-            "sInfoThousands" : ",",
-            "sLengthMenu" : "페이지당 줄수 _MENU_",
-            "sLoadingRecords" : "읽는중...",
-            "sProcessing" : "처리중...",
-            "sSearch" : "검색:",
-            "sZeroRecords" : "검색 결과가 없습니다",
-            "oPaginate" : {
-               "sFirst" : "처음",
-               "sLast" : "마지막",
-               "sNext" : "다음",
-               "sPrevious" : "이전"
-            },
-            "oAria" : {
-               "sSortAscending" : ": 오름차순 정렬",
-               "sSortDescending" : ": 내림차순 정렬"
-            }
-         }
-      }); // end of $('#example').DataTable
+		$('#example').DataTable({
+			"language" : {
+				"sEmptyTable" : "데이터가 없습니다",
+				"sInfo" : "_START_ - _END_ / _TOTAL_",
+				"sInfoEmpty" : "0 - 0 / 0",
+				"sInfoFiltered" : "(총 _MAX_ 개)",
+				"sInfoPostFix" : "",
+				"sInfoThousands" : ",",
+				"sLengthMenu" : "페이지당 줄수 _MENU_",
+				"sLoadingRecords" : "읽는중...",
+				"sProcessing" : "처리중...",
+				"sSearch" : "검색:",
+				"sZeroRecords" : "검색 결과가 없습니다",
+				"oPaginate" : {
+					"sFirst" : "처음",
+					"sLast" : "마지막",
+					"sNext" : "다음",
+					"sPrevious" : "이전"
+				},
+				"oAria" : {
+					"sSortAscending" : ": 오름차순 정렬",
+					"sSortDescending" : ": 내림차순 정렬"
+				}
+			}
+		}); // end of $('#example').DataTable
 
-   }); // end of $(document).ready(function()
+	}); // end of $(document).ready(function()
 </script>
 </body>
 </html>
